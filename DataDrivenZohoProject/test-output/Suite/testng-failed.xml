@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="TestOne(failed)">
+    <classes>
+      <class name="com.zoho.dfwork.testcases.LoginTest">
+        <methods>
+          <include name="init"/>
+          <include name="doLoginTest" invocation-numbers="0 1"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.zoho.dfwork.testcases.LoginTest -->
+    </classes>
+  </test> <!-- TestOne(failed) -->
+  <test name="TestTwo(failed)">
+    <classes>
+      <class name="com.zoho.dfwork.testcases.LeadTest">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+          <include name="createLeadTest" invocation-numbers="0 1 2 3"/>
+        </methods>
+      </class> <!-- com.zoho.dfwork.testcases.LeadTest -->
+    </classes>
+  </test> <!-- TestTwo(failed) -->
+</suite> <!-- Failed suite [Suite] -->

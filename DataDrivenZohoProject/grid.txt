@@ -1,0 +1,8 @@
+Hub->
+java -Dwebdriver.chrome.driver=drivers\chromedriver.exe -jar libraries/selenium-server-standalone-2.53.1.jar -role hub -hubConfig hub.json
+
+Node 1->
+java -Dwebdriver.chrome.driver=drivers\chromedriver.exe -jar libraries/selenium-server-standalone-2.53.1.jar -role rc -nodeConfig node1.json
+
+Node 2->
+java -Dwebdriver.chrome.driver=drivers\chromedriver.exe -jar libraries/selenium-server-standalone-2.53.1.jar -role rc -nodeConfig node2.json
